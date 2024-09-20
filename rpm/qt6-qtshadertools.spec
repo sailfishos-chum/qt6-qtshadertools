@@ -43,7 +43,7 @@ Requires: qt6-qtbase-devel%{?_isa}
 %cmake_install
 
 # hardlink files to %{_bindir}, add -qt6 postfix to not conflict
-mkdir %{buildroot}%{_bindir}
+mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_qt6_bindir}
 for i in * ; do
   case "${i}" in

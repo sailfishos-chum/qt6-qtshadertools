@@ -1,7 +1,5 @@
-%global qt_module qtshadertools
-
 Summary: Qt6 - Qt Shader Tools module builds on the SPIR-V Open Source Ecosystem
-Name:    qt6-%{qt_module}
+Name:    qt6-qtshadertools
 Version: 6.7.2
 Release: 0%{?dist}
 
@@ -11,11 +9,6 @@ Url:     http://www.qt.io
 %global  qt_version %(echo %{version} | cut -d~ -f1)
 
 Source0: %{name}-%{version}.tar.bz2
-
-
-# Upstream patches
-
-# Upstreamable patches
 
 BuildRequires: clang
 BuildRequires: cmake

@@ -1,3 +1,5 @@
+%global  qt_version 6.7.2
+
 Summary: Qt6 - Qt Shader Tools module builds on the SPIR-V Open Source Ecosystem
 Name:    qt6-qtshadertools
 Version: 6.7.2
@@ -13,7 +15,7 @@ Source0: %{name}-%{version}.tar.bz2
 BuildRequires: clang
 BuildRequires: cmake
 BuildRequires: ninja
-BuildRequires: qt6-qtbase-devel >= %{version}
+BuildRequires: qt6-qtbase-devel >= %{qt_version}
 BuildRequires: qt6-qtbase-private-devel
 %{?_qt6:Requires: %{_qt6}%{?_isa} = %{_qt6_version}}
 BuildRequires: pkgconfig(xkbcommon) >= 0.4.1

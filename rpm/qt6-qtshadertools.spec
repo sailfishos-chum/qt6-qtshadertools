@@ -82,6 +82,7 @@ popd
 
 
 %files devel
+#%%{_qt6_libdir}/qt6/sbom/*.spdx
 %{_qt6_archdatadir}/mkspecs/modules/*.pri
 %{_qt6_libdir}/qt6/modules/*.json
 %{_qt6_headerdir}/QtShaderTools/

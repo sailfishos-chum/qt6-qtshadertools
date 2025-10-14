@@ -1,4 +1,4 @@
-%global  qt_version 6.7.2
+%global  qt_version 6.8.3
 
 Summary: Qt6 - Qt Shader Tools module builds on the SPIR-V Open Source Ecosystem
 Name:    qt6-qtshadertools
